@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Republic Day</title>
+    <!-- Stylesheet -->
+    <style>
+      #blink {
+          font-size: 20px;
+          font-weight: bold;
+          font-family: sans-serif;
+      }
+  </style>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="clr-orange"></div>
+    <div class="clr-white"></div>
+    <div class="clr-green"></div>
+    <img class="ashoka-chakra" src="Ashoka_Chakra.png" />
+    <p id="blink">Freedom is indeed the most expensive as it came after the sacrifices of our freedom fighters<br> so never take it for granted. Happy Republic Day 2023! As we celebrate the 72nd Republic Day,<br> let's promise to protect our nation and its flag. Happy Republic Day 2023!</p>
+    <script type="text/javascript">
+      var blink = 
+          document.getElementById('blink');
+
+      setInterval(function () {
+          blink.style.opacity = 
+          (blink.style.opacity == 0 ? 1 : 0);
+      }, 1000); 
+  </script>
+  </body>
+</html>
